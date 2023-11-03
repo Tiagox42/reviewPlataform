@@ -2,10 +2,10 @@
 {
     public enum CommentStatus
     {
-        basic = 0,
-        highlighted = 1,
-        disabled = 2,
-        deleted = 3,
-        special = 4,
+        Basic = 0,
+        Highlighted = 1,
+        Disabled = 2,
+        Deleted = 3,
+        Special = 4,
     }
 }

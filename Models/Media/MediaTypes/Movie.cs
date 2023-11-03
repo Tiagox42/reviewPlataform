@@ -1,6 +1,6 @@
 ﻿namespace reviewPlataform.Models.Media.MediaTypes
 {
-    public class Movie
+    public class Movie : Media
     {
         public string title { get; set; }
         public string Director { get; set; }

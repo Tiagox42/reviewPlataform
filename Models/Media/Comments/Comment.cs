@@ -6,19 +6,21 @@ namespace reviewPlataform.Models.Media.Comments
     public class Comment
     {
         public Guid Id { get; set; }
-        public User user { get; set; }
-        public string text { get; set; }
-        public int likes { get; set; }
-        public int dislike { get; set; }
-        public CommentStatus status { get; set; }
-        public DateTime? created { get; set; } = DateTime.MinValue;
-        public DateTime? updated { get; set; }
-        public DateTime? lastUpdated { get; set;}
-        public DateTime? deleted { get; set; }
-        public DateTime? updatedBy { get; set;}
-        public DateTime? createdBy { get; set;}
+        public User User { get; set; }
+        public Guid Media { get; set; }
+        public string Text { get; set; }
+        public string LastText { get; set; }
+        public int Likes { get; set; }
+        public int Dislike { get; set; }
+        public CommentStatus Status { get; set; }
+        public DateTime? Created { get; set; } = DateTime.MinValue;
+        public DateTime? Updated { get; set; }
+        public DateTime? LastUpdated { get; set;}
+        public DateTime? Deleted { get; set; }
+        public DateTime? UpdatedBy { get; set;}
+        public DateTime? CreatedBy { get; set;}
 
         //HistoricoDeText um dia
-        
+
     }
 }
