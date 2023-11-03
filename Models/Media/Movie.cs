@@ -1,4 +1,4 @@
-﻿namespace reviewPlataform.Models
+﻿namespace reviewPlataform.Models.Media
 {
     public class Movie
     {
@@ -8,7 +8,7 @@
         public DateTime Release { get; set; }
         public string IndicateRate { get; set; }
         public string Synopsis { get; set; }
-        public String Actors { get; set; }
+        public string Actors { get; set; }
         public TimeOnly Duration { get; set; }
         public string Language { get; set; }
         public string ContryOrigin { get; set; }

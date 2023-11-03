@@ -9,5 +9,6 @@
         Influencer = 4,
         Critic = 5,
         Company = 6,
+        Banned = 7,
     }
 }
