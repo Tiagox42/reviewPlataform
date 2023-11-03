@@ -1,4 +1,4 @@
-﻿namespace reviewPlataform.Models.Media
+﻿namespace reviewPlataform.Models.Media.MediaTypes
 {
     public class Movie
     {

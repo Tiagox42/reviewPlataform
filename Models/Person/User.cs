@@ -1,11 +1,15 @@
-﻿namespace reviewPlataform.Models.Person
+﻿using reviewPlataform.Models.Person.Enums;
+
+namespace reviewPlataform.Models.Person
 {
     public class User
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public 
+        public Role Role { get; set; }
+        public string Picture { get; set; }
+
     }
 }
