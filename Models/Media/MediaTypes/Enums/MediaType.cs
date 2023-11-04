@@ -9,5 +9,7 @@
         Comics = 5,
         Manga = 6,
         Anime = 7,
+        a = 23,
+
     }
 }
