@@ -1,7 +1,10 @@
-﻿namespace reviewPlataform.Models.Media.MediaTypes
+﻿using reviewPlataform.Models.Media.MediaTypes.Enums;
+
+namespace reviewPlataform.Models.Media.MediaTypes
 {
     public class Movie : Media
     {
+        public MediaType type { get; set; } = MediaType.Movie;
         public string title { get; set; }
         public string Director { get; set; }
         public string Genre { get; set; }
