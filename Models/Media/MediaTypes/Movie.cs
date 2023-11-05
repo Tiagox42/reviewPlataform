@@ -4,14 +4,14 @@ namespace reviewPlataform.Models.Media.MediaTypes
 {
     public class Movie : Media
     {
-        public MediaType type { get; set; } = MediaType.Movie;
-        public string title { get; set; }
+        public MediaType Yype { get; set; } = MediaType.Movie;
+        public string Title { get; set; }
         public string Director { get; set; }
         public string Genre { get; set; }
         public DateTime Release { get; set; }
-        public string IndicateRate { get; set; }
+        public string AgeRating { get; set; }
         public string Synopsis { get; set; }
-        public string Actors { get; set; }
+        public List<string> Actors { get; set; }
         public TimeOnly Duration { get; set; }
         public string Language { get; set; }
         public string ContryOrigin { get; set; }
