@@ -9,5 +9,6 @@
         Comics = 5,
         Manga = 6,
         Anime = 7,
+        Teste = 99,
     }
 }
