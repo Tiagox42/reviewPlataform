@@ -15,6 +15,8 @@ namespace reviewPlataform.Models.Media.MediaTypes
         {
             Developer = developer;
         }
+
+        
     }
 
 }
