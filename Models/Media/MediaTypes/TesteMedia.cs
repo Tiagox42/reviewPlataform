@@ -11,7 +11,7 @@ namespace reviewPlataform.Models.Media.MediaTypes
         public MediaType type { get; set; } = MediaType.Teste;
         public string Developer { get; set; }
 
-        public TesteMedia(string developer, int negativePoints, int positivePoints, List<Comment> comments, string title) : base(negativePoints, positivePoints, comments, title)
+        public TesteMedia(string developer, int negativePoints, int positivePoints, List<Comment> comments, string title, MediaType type) : base(negativePoints, positivePoints, comments, title, type)
         {
             Developer = developer;
         }

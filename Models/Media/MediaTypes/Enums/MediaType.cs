@@ -4,7 +4,7 @@
     {
         Movie = 1,
         Game = 2,
-        Sitcom = 3,
+        Series = 3,
         Book = 4,
         Comics = 5,
         Manga = 6,
