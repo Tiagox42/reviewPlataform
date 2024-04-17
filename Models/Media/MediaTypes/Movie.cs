@@ -17,9 +17,24 @@ namespace reviewPlataform.Models.Media.MediaTypes
         public string? ProductionStudio { get; set; }
         public string? Trailer { get; set; }
 
-        public Movie(int negativePoints, int positivePoints, List<Comment> comments, string title, MediaType type) : base(negativePoints, positivePoints, comments, title, type)
+        public Movie()
         {
-            type = MediaType.Movie;
+        }
+
+        public Movie(int negativePoints, int positivePoints, string title, MediaType type) : base(negativePoints, positivePoints, title, type)
+        {
+            //Type = MediaType.Movie;
+            Director = null;
+            Genre = null;
+            Release = null;
+            AgeRating = null;
+            Synopsis = null;
+            Actors = new List<string>();
+            Duration = null;
+            Language = null;
+            ContryOrigin = null;
+            ProductionStudio = null;
+            Trailer = null;
         }
     }
 }

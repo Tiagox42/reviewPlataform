@@ -1,4 +1,4 @@
-﻿namespace reviewPlataform.Models.Person.Enums
+﻿namespace reviewPlataform.Models.User.Enums
 {
     public enum Role : int
     {

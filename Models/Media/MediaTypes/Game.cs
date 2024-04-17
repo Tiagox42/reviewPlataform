@@ -15,9 +15,21 @@ namespace reviewPlataform.Models.Media.MediaTypes
         public string? Trailer { get; set; }
         public string? SteamID { get; set; }
 
-        public Game(int negativePoints, int positivePoints, List<Comment> comments, string title, MediaType type) : base(negativePoints, positivePoints, comments, title, type)
+        public Game()
         {
-            type = MediaType.Game;
+        }
+
+        public Game(int negativePoints, int positivePoints, string title, MediaType type) : base(negativePoints, positivePoints, title, type)
+        {
+            //Type = MediaType.Game;
+            Developer = null;
+            Publisher = null;
+            ReleaseDate = null;
+            Platforms = new List<string>();
+            Genre = null;
+            AgeRating = null;
+            Trailer = null;
+            SteamID = null;
         }
     }
 }
