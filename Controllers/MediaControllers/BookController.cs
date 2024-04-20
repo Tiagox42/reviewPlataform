@@ -2,13 +2,11 @@
 
 namespace reviewPlataform.Controllers.MediaControllers
 {
-    [Route("Movies")]
-    [Route("Filmes")]
-    public class MoviesController : Controller
+    public class BookController : Controller
     {
         public IActionResult Index()
         {
-            ViewData["Title"] = "Filmes";
+            ViewData["Title"] = "Livros";
             return View();
         }
     }

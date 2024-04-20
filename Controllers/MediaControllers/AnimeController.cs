@@ -2,11 +2,11 @@
 
 namespace reviewPlataform.Controllers.MediaControllers
 {
-    public class BooksController : Controller
+    public class AnimeController : Controller
     {
         public IActionResult Index()
         {
-            ViewData["Title"] = "Livros";
+            ViewData["Title"] = "Animes";
             return View();
         }
     }

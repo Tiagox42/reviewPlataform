@@ -1,0 +1,30 @@
+﻿@model reviewPlataform.Models.Media.MediaTypes.Enums.AgeRating
+@using AgeRating = reviewPlataform.Models.Media.MediaTypes.Enums.AgeRating;
+
+@Html.DropDownListFor(model => model, Enum.GetValues(typeof(AgeRating)).Cast<AgeRating>().Select(v => new SelectListItem
+{
+    Text = FormataAgeRating(v),
+    Value = ((int)v).ToString()
+}), "Selecione uma classificação")
+
+@functions {
+    public string FormataAgeRating(AgeRating rating)
+    {
+        switch (rating)
+        {
+            case AgeRating.GeneralAudience:
+                return "Livre";
+            case AgeRating.:
+                return "Para todos";
+            case AgeRating.PG13:
+                return "Maiores de 13";
+            case AgeRating.R:
+                return "Restrito";
+            case AgeRating.NC17:
+                return "Não recomendado para menores de 17";
+            default:
+                return rating.ToString();
+        }
+    }
+}
+

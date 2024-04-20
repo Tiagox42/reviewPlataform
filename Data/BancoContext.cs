@@ -9,16 +9,8 @@ namespace reviewPlataform.Data
     public class AppDbContext : DbContext
     {
 
-        public IConfiguration _config { get; set; }
-
-        public AppDbContext(IConfiguration config)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            _config = config;
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(_config.GetConnectionString("DatabaseConnection"));
         }
 
         //Mídias
@@ -29,7 +21,7 @@ namespace reviewPlataform.Data
 
         //Outros
         public DbSet<User> User { get; set; }
-        public DbSet<Comment> Comment { get;}
+        //public DbSet<Comment> Comment { get;}
 
     }
 }

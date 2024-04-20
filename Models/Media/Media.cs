@@ -9,6 +9,7 @@ namespace reviewPlataform.Models.Media
         public Guid Id { get; set; }
         public int? NegativePoints { get; set; }
         public int? PositivePoints { get; set; }
+        public int? ReviewPoints { get; set; }
         public string Title { get; set; }
         public MediaType Type { get; set; }
 
@@ -21,6 +22,7 @@ namespace reviewPlataform.Models.Media
             Id = Guid.NewGuid();
             NegativePoints = negativePoints;
             PositivePoints = positivePoints;
+            ReviewPoints = 0;
             Title = title;
             Type = type;
         }

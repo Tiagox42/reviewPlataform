@@ -1,0 +1,10 @@
+﻿@model reviewPlataform.Models.Media.MediaTypes.Movie
+
+@using (Html.BeginForm("AddRegistro", "Movie", FormMethod.Post))
+{
+    @Html.EditorForModel()
+
+    <input type="submit" value="Adicionar Filme" />
+}
+
+
