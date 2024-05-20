@@ -13,15 +13,17 @@
         switch (rating)
         {
             case AgeRating.GeneralAudience:
-                return "Livre";
-            case AgeRating.:
-                return "Para todos";
-            case AgeRating.PG13:
-                return "Maiores de 13";
-            case AgeRating.R:
-                return "Restrito";
-            case AgeRating.NC17:
-                return "Não recomendado para menores de 17";
+                return "(G) Livre";
+            case AgeRating.ParentalGuidanceSuggested:
+                return "(PG) Para todos";
+            case AgeRating.ParentsStronglyCautioned:
+                return "(PG-13) Maiores de 13";
+            case AgeRating.Restricted:
+                return "(R) Restrito (menores somente acompanhado)";
+            case AgeRating.AdultOnly:
+                return "(NC-17)Somente Adultos";
+            case AgeRating.Undefined:
+                return "Indefinido";
             default:
                 return rating.ToString();
         }

@@ -2,11 +2,11 @@
 {
     public enum AgeRating
     {
-        None = 0,
+        Undefined = 0,
         GeneralAudience = 1,
         ParentalGuidanceSuggested = 2,
         ParentsStronglyCautioned = 3,
         Restricted = 4,
-        Adult = 5,
+        AdultOnly = 5,
     }
 }
